@@ -16,6 +16,17 @@ class YoutubeLightPlayer extends HTMLElement {
     }
     return ''
   }
+
+  attributeChangedCallback(attrName) {
+    if (attrName === 'src') {
+      const shadow = this.shadowRoot ? this.shadowRoot : this.attachShadow({ mode: 'open' });
+      shadow.innerHTML =
+        /*template*/
+        `
+          <img src="https://i.ytimg.com/vi/${this.videoId}/sddefault.jpg">
+        `;
+    }
+  }
 }
 
 customElements.define('youtube-light-player', YoutubeLightPlayer);
