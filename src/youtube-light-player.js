@@ -23,7 +23,24 @@ class YoutubeLightPlayer extends HTMLElement {
       shadow.innerHTML =
         /*template*/
         `
-          <img src="https://i.ytimg.com/vi/${this.videoId}/sddefault.jpg">
+          <div class="video">
+            <img class="video__thumbnail" src="https://i.ytimg.com/vi/${this.videoId}/sddefault.jpg">
+          </div>
+          <style>
+            .video {
+              position: relative; 
+              cursor: pointer;
+              display:inline-block;
+              width: 100%;
+              overflow: hidden;
+            }  
+            .video__thumbnail {
+              width: 100%;
+              height: 100%;
+              display:block;
+              margin: -9.5% 0;
+            }
+          </style>
         `;
     }
   }
