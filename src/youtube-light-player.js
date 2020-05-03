@@ -65,6 +65,35 @@ class YoutubeLightPlayer extends HTMLElement {
             } 
           </style>
         `;
+      const playVideo = () => {
+        shadow.innerHTML =
+          /*template*/
+          `
+          <div class="video"> 
+            <iframe class="video__embed" type="text/html" frameborder="0"
+                    src="http://www.youtube.com/embed/${this.videoId}?autoplay=1"></iframe>
+          <div>
+          <style>
+            .video{
+              position: relative; 
+              width: 100%;
+              height: 0;
+              padding-bottom: 56.25%;
+              background-color: #000000;
+            }
+            .video__embed{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+        
+          `
+      }
+      shadow.querySelector('button').onclick = playVideo;
+      shadow.querySelector('.video').onclick = playVideo;
     }
   }
 }
