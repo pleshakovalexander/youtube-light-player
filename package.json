@@ -1,0 +1,23 @@
+{
+  "name": "youtube-light-player",
+  "version": "1.0.0",
+  "description": "WebComponent for ligh inserting youtube video",
+  "main": "src/youtube-light-player.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pleshakovalexander/youtube-light-player.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "youtube"
+  ],
+  "author": "Alexander Pleshakov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pleshakovalexander/youtube-light-player/issues"
+  },
+  "homepage": "https://github.com/pleshakovalexander/youtube-light-player#readme"
+}
