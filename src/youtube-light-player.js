@@ -36,15 +36,15 @@ class YoutubeLightPlayer extends HTMLElement {
             .video {
               position: relative; 
               cursor: pointer;
-              display:inline-block;
+              display: inline-block;
               width: 100%;
               overflow: hidden;
             }  
             .video__thumbnail {
               width: 100%;
               height: 100%;
-              display:block;
-              margin: -9.5% 0;
+              display: block;
+              margin: -9.375% 0;
             }
             .video__button{
               position: absolute;
