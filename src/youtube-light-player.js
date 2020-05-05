@@ -35,8 +35,8 @@ class YoutubeLightPlayer extends HTMLElement {
           <style>
             .video {
               position: relative; 
-              cursor: pointer;
-              display: inline-block;
+              cursor: pointer;  
+              display: block;
               width: 100%;
               overflow: hidden;
             }  
