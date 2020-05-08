@@ -71,7 +71,7 @@ class YoutubeLightPlayer extends HTMLElement {
           `
           <div class="video"> 
             <iframe class="video__embed" type="text/html" frameborder="0"
-                    src="http://www.youtube.com/embed/${this.videoId}?autoplay=1"></iframe>
+                    src="https://www.youtube.com/embed/${this.videoId}?autoplay=1"></iframe>
           <div>
           <style>
             .video{
