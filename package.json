@@ -1,6 +1,6 @@
 {
   "name": "youtube-light-player",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebComponent for ligh inserting youtube video",
   "main": "src/youtube-light-player.js",
   "scripts": {
