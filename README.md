@@ -2,7 +2,7 @@
 ## How?
 Latest version
 ```html
-<script src="https://cdn.jsdelivr.net/npm/youtube-light-player"></script>
+<script src="https://unpkg.com/youtube-light-player"></script>
 ```
 
 WebComponent with simple usage
