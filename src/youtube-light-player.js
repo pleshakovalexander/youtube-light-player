@@ -8,10 +8,8 @@ class YoutubeLightPlayer extends HTMLElement {
   get videoId() {
     const url = this.getAttribute('src');
     if (url) {
-      const location = document.createElement('a');
-      location.href = url;
-      const params = new URLSearchParams(location.search);
-      const id = params.get('v');
+      const location = new URL(url);
+      const id = location.searchParams.get('v');
       return id;
     }
     return ''
