@@ -1,4 +1,6 @@
 # youtube-light-player
+Demo: https://pleshakovalexander.github.io/youtube-light-player/demo/
+
 ## How?
 Latest version
 ```html
