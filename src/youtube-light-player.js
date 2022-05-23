@@ -1,5 +1,7 @@
 class YoutubeLightPlayer extends HTMLElement {
 
+  #shadowRoot = this.attachShadow({ mode: 'open' });
+
   //watched attributes
   static get observedAttributes() {
     return ['src'];
@@ -17,8 +19,7 @@ class YoutubeLightPlayer extends HTMLElement {
 
   attributeChangedCallback(attrName) {
     if (attrName === 'src') {
-      const shadow = this.shadowRoot ? this.shadowRoot : this.attachShadow({ mode: 'open' });
-      shadow.innerHTML =
+      this.#shadowRoot.innerHTML =
         /*template*/
         `
           <div class="video">
@@ -64,7 +65,7 @@ class YoutubeLightPlayer extends HTMLElement {
           </style>
         `;
       const playVideo = () => {
-        shadow.innerHTML =
+        this.#shadowRoot.innerHTML =
           /*template*/
           `
           <div class="video"> 
@@ -90,8 +91,8 @@ class YoutubeLightPlayer extends HTMLElement {
         
           `
       }
-      shadow.querySelector('button').onclick = playVideo;
-      shadow.querySelector('.video').onclick = playVideo;
+      this.#shadowRoot.querySelector('button').onclick = playVideo;
+      this.#shadowRoot.querySelector('.video').onclick = playVideo;
     }
   }
 }
